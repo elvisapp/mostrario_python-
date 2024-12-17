@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    response = requests.get('http://190.83.96.85:3000/agricola')
+    response = requests.get('http://xxxxxxxxxxxxxxxxxxx')
     productos = response.json()
     return render_template('index.html', productos=productos)
 
